@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\My071112color_based_PF.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\071112color_based_PF.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MY071112COLOR_BASED_PF_DIALOG DIALOGEX 0, 0, 438, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PF"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Automatically Run",IDC_BUTTON_IMAGE_SEQUENCE,65,46,77,14
+    PUSHBUTTON      "Video File",IDC_BUTTON_VIDEO,79,101,66,14,WS_DISABLED
+    PUSHBUTTON      "Camera (Matrox)",IDC_BUTTON_CAMERA_MATROX,11,101,66,14,WS_DISABLED
+    GROUPBOX        "Input",IDC_STATIC,7,7,148,132
+    PUSHBUTTON      "WebCam",IDC_BUTTON_WEBCAM,11,116,66,14,WS_DISABLED
+    PUSHBUTTON      "Quit",IDC_BUTTON_QUIT,381,7,50,14
+    GROUPBOX        "Parameter",IDC_STATIC,160,7,215,132
+    LTEXT           "Num. of Particles:",IDC_STATIC,173,55,58,8
+    EDITTEXT        IDC_EDIT_NUM_OF_PARTICLES,235,52,28,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,381,23,50,14
+    LTEXT           "Algorithm:",IDC_STATIC,168,20,34,8
+    COMBOBOX        IDC_COMBO_ALGORITHM,205,19,165,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Next Image",IDC_BUTTON_NEXT_IMG,29,79,55,14
+    PUSHBUTTON      "Load Image",IDC_BUTTON_LOAD_IMG,29,62,55,14
+    PUSHBUTTON      "Define Object",IDC_BUTTON_DEFINE_OBJ,87,62,55,14
+    LTEXT           "Position SIGMA:",IDC_STATIC,173,72,52,8
+    LTEXT           "Velocity SIGMA:",IDC_STATIC,173,90,52,8
+    EDITTEXT        IDC_EDIT_POSITION_SIGMA,235,69,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VELOCITY_SIGMA,235,86,28,14,ES_AUTOHSCROLL
+    LTEXT           "Size SIGMA:",IDC_STATIC,173,108,40,8
+    EDITTEXT        IDC_EDIT_SIZE_SIGMA,235,103,28,14,ES_AUTOHSCROLL
+    LTEXT           "(used for hx, hy)",IDC_STATIC,173,119,56,8
+    GROUPBOX        "Particle Filter",IDC_STATIC,165,39,106,95
+    GROUPBOX        "Mean Shift",IDC_STATIC,274,39,96,70
+    LTEXT           "Window width:",IDC_STATIC,281,54,48,8
+    LTEXT           "Window height:",IDC_STATIC,281,72,51,8
+    EDITTEXT        IDC_EDIT_MS_WIN_WIDTH,335,51,28,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MS_WIN_HEIGHT,335,68,28,14,ES_AUTOHSCROLL
+    LTEXT           "epsilon:",IDC_STATIC,281,89,26,8
+    EDITTEXT        IDC_EDIT_MS_EPSILON,334,86,28,14,ES_AUTOHSCROLL
+    GROUPBOX        "Image Sequence",IDC_STATIC,12,19,138,78
+    LTEXT           "Choose Seq.:",IDC_STATIC,19,33,44,8
+    LTEXT           "or",IDC_STATIC,19,64,8,8
+    COMBOBOX        IDC_COMBO_IMG_SEQUENCE,66,31,77,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Result",IDC_STATIC,7,143,368,36
+    LTEXT           "execution time (1 frame):",IDC_STATIC,14,156,82,8
+    CTEXT           "0",IDC_STATIC_EXE_TIME,98,156,24,8
+    LTEXT           "ms",IDC_STATIC,124,156,10,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "071112color_based_PF.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "071112color_based_PF.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MY071112COLOR_BASED_PF_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 431
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\My071112color_based_PF.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
